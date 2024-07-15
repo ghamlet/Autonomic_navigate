@@ -105,9 +105,10 @@ def main():
     
     set_effect(r=255)
     navigate_wait(z=z, speed=1, frame_id="body", auto_arm = True)
-    rospy.sleep(0.5)
+    rospy.sleep(5)
+    
     set_effect(g=255, effect='blink')
-    for marker in ['aruco_40', 'aruco_39', 'aruco_38', 'aruco_37']:
+    for marker in ['aruco_43', 'aruco_44', 'aruco_45', 'aruco_46', 'aruco_47', 'aruco_48']:
         navigate_wait_fixed(frame_id=marker)
         if platform_found:
             break

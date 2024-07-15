@@ -25,7 +25,7 @@ land = rospy.ServiceProxy('land', Trigger)
 arming = rospy.ServiceProxy('mavros/cmd/arming', CommandBool)
 set_effect = rospy.ServiceProxy('led/set_effect', SetLEDEffect)
 
-ar = "aruco_101" # ID нарушителя
+ar = "aruco_49" # ID нарушителя
 tfBuffer = tf2_ros.Buffer()
 listener = tf2_ros.TransformListener(tfBuffer)
 
